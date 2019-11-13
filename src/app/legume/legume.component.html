@@ -1,0 +1,9 @@
+
+<div [ngClass]="'frais':frais==true">
+<img [src]="image">
+ {{nom |uppercase}} prix(kg):{{prix}} 
+ <input type="checkbox" [disabled]="!frais">
+  quantité : <input type=Number #quan>
+  <button (click)="calcule(quan.value)">calculer prix</button>
+  {{prix1}}
+</div>
